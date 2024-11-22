@@ -1,4 +1,4 @@
-import { PaymentMethodEntity } from "src/payment-methods/entities/payment-method.entity";
+import { PaymentMethodEntity } from "./../../payment-methods/entities/payment-method.entity";
 import { BaseEntity } from "./../../common/config/base.entity";
 import { Column, Entity, JoinColumn, ManyToOne } from "typeorm";
 
