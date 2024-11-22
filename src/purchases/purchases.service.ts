@@ -41,6 +41,7 @@ export class PurchasesService {
         this.purchaseRepository.createQueryBuilder('purchase')
         .where({isActive: true})
         .leftJoinAndSelect('purchase.paymentMethod', 'paymentMethod')
+        .leftJoinAndSelect('purchase.customer', 'customer')
         .take(limit)
         .skip(skip)
         .getMany()
